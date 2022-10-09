@@ -94,8 +94,12 @@
     如果想表示的整数超过了该限值，可以使用长整型long long 占8字节64位。
 
 
+- ***lower_bound & upper_bound***
+   - ***lower_bound(first, last, val)***
+       查找返回第一个大于等于目标值的元素的位置
 
-
+   - ***upper_bound(first, last, val)***
+       查找返回第一个大于目标值的元素的位置
 
 
 
