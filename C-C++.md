@@ -31,6 +31,12 @@
     Access to the array length
     `Array.size()`
 
+- ***.begin()***
+    Get the first address characters
+
+- ***.end()***
+    Get the last address characters
+
 - ***to_string***
     The Numbers into an array **x-->s**
     `String s = to_string(x)`
@@ -101,8 +107,52 @@
    - ***upper_bound(first, last, val)***
        查找返回第一个大于目标值的元素的位置
 
+- ***sort(begin(), end())***
+- ***sort(begin(), end(), [xxx<TypeData>])***
+
+    **DEAFULT:**
+    - ***less<TypeData>***
+        From small to large
+
+    - ***greater<TypeData>***
+        From large to small
+        ```cpp
+#include<iostream>
+#include<algorithm>
+
+using namespace std;
+
+int main()
+{
+int a[10]={9,6,3,8,5,2,7,4,1,0};
+
+for(int i=0;i<10;i++)
+cout << a[i] << endl;
+
+sort(a,a+10,less<int>());
+
+return 0;
+}
 
 
+#include<iostream>
+#include<algorithm>
+
+using namespace std;
+
+int main()
+{
+int a[10]={9,6,3,8,5,2,7,4,1,0};
+
+for(int i=0;i<10;i++)
+cout << a[i] << endl;
+
+sort(a,a+10,greater<int>());
+
+return 0;
+
+}
+```
 
 
 
