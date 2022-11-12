@@ -1,3 +1,5 @@
+![desktop](https://raw.github.com/Xingmk/Photos/Desktop.png) 
+
 # C/C++
 - ***strcpy(s1, s2)***
     Copy to s1 s2
@@ -117,22 +119,22 @@
     - ***greater<TypeData>***
         From large to small
         ```cpp
-#include<iostream>
-#include<algorithm>
+        #include<iostream>
+        #include<algorithm>
 
-using namespace std;
+        using namespace std;
 
-int main()
-{
-int a[10]={9,6,3,8,5,2,7,4,1,0};
+        int main()
+        {
+        int a[10]={9,6,3,8,5,2,7,4,1,0};
 
-for(int i=0;i<10;i++)
-cout << a[i] << endl;
+        for(int i=0;i<10;i++)
+        cout << a[i] << endl;
 
-sort(a,a+10,less<int>());
+        sort(a,a+10,less<int>());
 
-return 0;
-}
+        return 0;
+        }
 
 
 #include<iostream>
@@ -153,6 +155,22 @@ return 0;
 
 }
 ```
+
+- ***hash***
+    ```cpp
+    bool containDuplicate(vector<int>& nums) {
+    unordered_set<int> s(nums.begin(), nums.end());
+    return s.size() != nums.size();
+
+    return set<int>(nums.begin(), nums.end()).size() != nums.size();
+    ```
+
+
+
+
+
+
+
 
 
 
