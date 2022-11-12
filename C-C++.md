@@ -19,7 +19,8 @@
     - ***C***
         The numbers into an array
 
-        ![str](./Pictures/C.png)
+
+![str](./Pictures/C.png)
 - ***strcpy(s1, s2)***
 
     Copy to s1 s2
