@@ -1,4 +1,5 @@
-![desktop](https://raw.github.com/Xingmk/Photos/Desktop.png) 
+<!-- ![this](./desktop.png) -->
+![this](https://github.com/Xingmk/Photos/blob/main/Desktop.png) 
 
 # C/C++
 - ***strcpy(s1, s2)***
@@ -47,54 +48,54 @@
     To reverse the string
     ```cpp
     1. Use func:reverse from <algorithm>
-    #include <iostream>
-    #include <string>
-    #include <algorithm>
+#include <iostream>
+#include <string>
+#include <algorithm>
 
-    int main(){
+int main(){
 
-    string s = "hello";
-    reverse(s.begin(), s.end());
-    cout << s << endl;
-    return 0;
-    }
+string s = "hello";
+reverse(s.begin(), s.end());
+cout << s << endl;
+return 0;
+}
 
-    2. DIY
-    #include <iostream>
-    using namespace std;
+2. DIY
+#include <iostream>
+using namespace std;
 
-    void Reverse( char *s, int n){
-    for ( int i=0,j=n-1;i<j;i++,j--){
-    char c=s[i];
-    s[i]=s[j];
-    s[j]=c;
-    }
-    }
+void Reverse( char *s, int n){
+for ( int i=0,j=n-1;i<j;i++,j--){
+char c=s[i];
+s[i]=s[j];
+s[j]=c;
+}
+}
 
-    int main()
-    {
+int main()
+{
 
-    char s[]= "hello" ;
-    Reverse(s,5);
-    cout << s << endl;
+char s[]= "hello" ;
+Reverse(s,5);
+cout << s << endl;
 
-    return 0;
-    }
+return 0;
+}
 
-    3. Use func:strrev from string.h
-    #include<iostream>
-    #include <cstring>
+3. Use func:strrev from string.h
+#include<iostream>
+#include <cstring>
 
-    int main(){
+int main(){
 
-    char s[]="hello";
-    strrev(s);
-    cout << s << endl;
+char s[]="hello";
+strrev(s);
+cout << s << endl;
 
-    return 0;
-    }
+return 0;
+}
 
-    ```
+```
 
 - ***INT_MAX INT_MIN***
     因为int占4字节32位，根据二进制编码的规则，INT_MAX = 2^31-1，INT_MIN= -2^31.
@@ -119,22 +120,22 @@
     - ***greater<TypeData>***
         From large to small
         ```cpp
-        #include<iostream>
-        #include<algorithm>
+#include<iostream>
+#include<algorithm>
 
-        using namespace std;
+using namespace std;
 
-        int main()
-        {
-        int a[10]={9,6,3,8,5,2,7,4,1,0};
+int main()
+{
+int a[10]={9,6,3,8,5,2,7,4,1,0};
 
-        for(int i=0;i<10;i++)
-        cout << a[i] << endl;
+for(int i=0;i<10;i++)
+cout << a[i] << endl;
 
-        sort(a,a+10,less<int>());
+sort(a,a+10,less<int>());
 
-        return 0;
-        }
+return 0;
+}
 
 
 #include<iostream>
