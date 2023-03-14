@@ -1,8 +1,14 @@
 {
+  "OutputFoldersPerTargetSystem": {
+    "本地计算机": [
+      "out\\build\\x64-Debug",
+      "out\\install\\x64-Debug"
+    ]
+  },
   "ExpandedNodes": [
     "",
-    "\\Array"
+    "\\05 String"
   ],
-  "SelectedNode": "\\Array\\新建文件",
+  "SelectedNode": "\\05 String\\main.cpp",
   "PreviewInSolutionExplorer": false
 }
